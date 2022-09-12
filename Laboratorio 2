@@ -1,0 +1,47 @@
+#punto 1
+a=int(input())
+b=2
+c=a%b
+d=a*2
+
+if c==0:
+  print(f"{a} es un numero par")
+else:
+  print(f"{a} es un numero impar
+  
+  # punto 2
+rango= int(input('Digite un valor entero')) # Pedimos al usuario que digite un valor entero ya que el ciclo for solo admite enteros, este valor lo guardamos en la variable rango
+sumar=0 # como vamos a sumar de forma iterativa el valor de i en el ciclo for, debemos iniciar en 0 la variable que usaremos para almacenar los valores del contador
+for i in range (1,rango+1,1): # creamos un ciclo for que vaya de 1 al valor ingresado por el usuario más uno, contando de a 1
+    sumar+=i # Usamos la variable sumar para ir almacenando los valores del contador hasta el número ingresado por el usuario
+
+print(sumar) # finalmente imprimimos el valor de la suma de los n números
+
+
+#punto 3
+a=int(input())
+b=2
+c=a%b
+d=a*2
+
+if c==0:
+  print(f"{a} es un numero par")
+else:
+  print(f"{a} es un numero impar")
+if (c==0):
+  for a in range(0,a,2):
+    print(a)
+    
+    # punto 4
+n1= float(input('Digite un número')) # Pedimos al usuario que ingrese un número, como el usuario puede ingresar un valor decimal asignamos a n1 como flotante y guardamos los datos en esta variable  
+n2= float (input('Digite un porcentaje entre 0 y 100')) # Luego pedimos al usuario que nos indique el porcentaje a calcular dentro de un rango de 0 a 100 y lo guardamos dentro de n2 como flotante
+while n2>100: # Realizamos un ciclo while por si el usuario se equivoca e ingresa un dato fuera de rango, de la misma forma si lo realiza indefinidamente, por tal el ciclo consiste en que n2 debe ser menor que 100 para que no ingrese en el ciclo
+    print('Error, ingrese un valor válido entre 0 y 100') # imprimimos un mensaje indicando los valores correctos
+    n2= float (input('Digite un porcentaje entre 0 y 100')) # volvemos a pedir al usuario que ingrese un valor de porcentaje entre 0 y 100 y los guardamos como flotante en n2
+
+porcentaje= n1*n2/100 # calculamos el porcentaje del numero en una variable flotante 
+print(porcentaje) # imprimimos el porcentaje del primer número
+
+Diagramas de flujo
+
+https://colab.research.google.com/drive/1eUEODuC4pZSf_kEd8eALCopWmVAF_O-e#scrollTo=vrnInyN0r2uY
